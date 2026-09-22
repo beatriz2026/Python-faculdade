@@ -1,1 +1,33 @@
-print("Olá!")
+# Dados dois catetos de um triângulo retângulo, calcular o valor da hipotenusa:
+"""import math
+cateto_1 = float(input("Digite o valor do cateto 1: "))
+print("O valor do cateto 1 é:", cateto_1)
+cateto_2 = float(input("Digite o valor do cateto 2: "))
+print("O valor do cateto 2 é:", cateto_2)
+hipotenusa = math.sqrt(cateto_1**2 + cateto_2**2)
+print("O valor da hipotenusa é:", hipotenusa)"""
+
+# Suponha que uma pessoa tenha comprado 3 artigos em uma loja, tendo, para cada artigo, seu nome, preço e percentual de desconto. 
+# Faça um algoritmo que imprima o nome, preço e preço com desconto de cada artigo comprado, além do total da conta a apagar.
+
+import os
+
+art_1 = str(input("Digite o nome do artigo 1: "))
+preco_art_1 = float(input("Digite o preço do artigo 1: "))
+desconto_art_1 = float(input("Digite o percentual de desconto do artigo 1:"))
+novo_preco_1 = preco_art_1 - (preco_art_1 * desconto_art_1 / 100)
+
+art_2 = str(input("Digite o nome do artigo 2: "))
+preco_art_2 = float(input("Digite o preço do artigo 2:"))
+desconto_art_2 = float(input("Digite o percentual de desconto do artigo 2:"))
+novo_preco_2 = preco_art_2 - (preco_art_2 * desconto_art_2 / 100)
+
+art_3 = str(input("Digite o nome do artigo 3: "))
+preco_art_3 = float(input("Digite o preço do artigo 3: "))
+desconto_art_3 = float(input("Digite o percentual de desconto do artigo 3:"))
+novo_preco_3 = preco_art_3 - (preco_art_3 * desconto_art_3 / 100)
+
+print("\nNome do artigo\tPreço\tDesconto\tPreço com desconto")
+print(f"{art_1}\t{preco_art_1:}\t{desconto_art_1:}%\t{novo_preco_1:.2f}")
+print(f"{art_2}\t{preco_art_2:}\t{desconto_art_2:}%\t{novo_preco_2:.2f}")
+print(f"{art_3}\t{preco_art_3:}\t{desconto_art_3:}%\t{novo_preco_3:.2f}")
